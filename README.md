@@ -8,4 +8,4 @@
 
 效果预览
 
-<img src="images/img.jpg" width="45%" />
+<img src="image/img.jpg" width="45%" />

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flayone.trapezoidbuttons.MainActivity">
+
+
+    <com.flayone.trapezoidbuttons.IrregularButton
+        android:id="@+id/irr"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        app:buttonTextSize="18sp"
+        app:caps="3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:leftText="这个是左边按钮"
+        app:rightText="这个是右边按钮"
+        app:stoke="3dp"
+        app:widthCaps="-30dp" />
+
+    <com.flayone.trapezoidbuttons.IrregularButton
+        android:id="@+id/irr1"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="20dp"
+        app:buttonTextSize="16sp"
+        app:caps="10dp"
+        app:isLeftSelect="false"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/irr"
+        app:leftText="取消"
+        app:rightText="确认"
+        app:stoke="0dp"
+        app:widthCaps="0dp" />
+
+    <com.flayone.trapezoidbuttons.IrregularButton
+        android:id="@+id/irr2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_margin="8dp"
+        app:buttonTextSize="12sp"
+        app:caps="1dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/irr1"
+        app:leftText="否"
+        app:rightText="是"
+        app:stoke="0.5dp"
+        app:widthCaps="30dp" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="全部左选"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/irr2" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="全部右选"
+        app:layout_constraintLeft_toRightOf="@id/btn1"
+        app:layout_constraintTop_toBottomOf="@id/irr2" />
+
+</android.support.constraint.ConstraintLayout>
